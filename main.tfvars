@@ -1,0 +1,8 @@
+yc_token     		= "yandex_cloud_token"
+yc_cloud_id  		= "cloud-kmor76"
+yc_folder_id 		= "b1gv2ffjjlh8rvsbvqqu"
+yc_zone      		= "ru-central1-a"
+yc_os_user   		= "almalinux"
+private_key_path	= "C:/mcs/kmor.pem"
+public_key_path         = "C:/ssh/id_rsa.pub"
+yandex_disk_api_token   = "yandex_disk_api_token"

@@ -1,0 +1,2 @@
+docker.io/kubeflowkatib/file-metrics-collector:v0.14.0-rc.0
+docker.io/kubeflowkatib/tfevent-metrics-collector:v0.14.0-rc.0
