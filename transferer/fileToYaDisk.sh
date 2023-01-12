@@ -2,7 +2,7 @@
 
 API_TOKEN=$1
 VOL_SIZE='990M'
-IMAGES_LIST='./images.txt'
+IMAGES_LIST='./imagesUnix.txt'
 
 
 IMAGES_DIR=/tmp/images/

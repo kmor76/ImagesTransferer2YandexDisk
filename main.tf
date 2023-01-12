@@ -66,7 +66,7 @@ resource "yandex_compute_instance" "vm-1" {
 
   provisioner "remote-exec" {
 #    inline = ["sudo snap install docker","echo 1","sudo groupadd docker","echo 2", "sudo usermod -aG docker $USER","echo 3", "sudo service snap.docker.dockerd start", "echo 4" ,"chmod 777 /home/ubuntu/fileToYaDisk.sh" ,"echo 5", "sudo /home/ubuntu/fileToYaDisk.sh"]
-    inline = ["sudo yum -y install docker","echo 1","sudo groupadd docker","echo 2", "sudo usermod -aG docker $USER","echo 3", "echo 4" ,"chmod 777 /home/almalinux/fileToYaDisk.sh" ,"echo 5", "sudo /home/almalinux/fileToYaDisk.sh ${var.yandex_disk_api_token}"]
+    inline = ["sudo yum -y install docker","echo 1","sudo groupadd docker","echo 2", "sudo usermod -aG docker $USER","tr -d '\\015' </home/almalinux//images.txt >/home/almalinux//imagesUnix.txt", "tr -d '\\015' </home/almalinux/fileToYaDisk.sh >/home/almalinux/fileToYaDiskUnix.sh" ,"chmod 777 /home/almalinux/fileToYaDiskUnix.sh" ,"echo 5", "sudo /home/almalinux/fileToYaDiskUnix.sh ${var.yandex_disk_api_token}"]
 
     connection {
       host        = self.network_interface.0.nat_ip_address
